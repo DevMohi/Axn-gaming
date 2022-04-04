@@ -1,0 +1,10 @@
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    height: 500px;
+}
+
+.review-img img {
+    border-radius: 50%;
+}
