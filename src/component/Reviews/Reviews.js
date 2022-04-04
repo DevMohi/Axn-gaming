@@ -4,7 +4,7 @@ import useReviews from '../../hooks/useReviews';
 const Reviews = () => {
     const [reviews, setReviews] = useReviews()
     return (
-        <div className='container'>
+        <div className='container py-2'>
 
             <h1 className='py-3 text-center'>Here Are Few More Reviews!</h1>
 
