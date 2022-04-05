@@ -8,7 +8,7 @@ const Header = () => {
             <Navbar bg="dark" variant="dark">
                 <Container className='py-3'>
 
-                    <CustomLink className='ms-2 h4' to='/'>BigShots</CustomLink>
+                    <CustomLink className='ms-2 h4' to='/'>AXN GAMING</CustomLink>
 
                     <Nav className="ms-auto d-flex align-items-center">
                         <CustomLink className='ms-4 h4 ' to='/'>Home</CustomLink>
