@@ -40,8 +40,8 @@ const Home = () => {
                     </div>)
                 }
             </div>
-            <div className='d-flex justify-content-center mb-4'>
-                <Link to='/reviews'><button className='btn common-color-btn px-5'>See All Reviews</button></Link>
+            <div className='mb-4 d-flex justify-content-center'>
+                <Link to='/reviews'><button className='btn common-color-btn px-5 '>See All Reviews</button></Link>
             </div>
         </div>
     );
