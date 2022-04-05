@@ -8,3 +8,9 @@
 .review-img img{
     border-radius: 50%;
 }
+
+.common-color-btn{
+    background-color: #0991B1;
+    color: white;
+    border: none;
+}

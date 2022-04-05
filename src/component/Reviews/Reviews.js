@@ -11,7 +11,7 @@ const Reviews = () => {
             <div className='main-container py-5'>
 
                 {
-                    reviews.map(review => <div className='border rounded shadow-lg p-3 mb-5 bg-white rounded'>
+                    reviews.map(review => <div className='border rounded shadow-sm p-3 mb-5 bg-white rounded border-3'>
 
                         <div className='d-flex align-items-center justify-content-center rounded review-img'>
                             <img src={review.img} alt="" />
