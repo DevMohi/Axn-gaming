@@ -11,10 +11,10 @@ const Header = () => {
                     <CustomLink className='ms-2 h4' to='/'>AXN GAMING</CustomLink>
 
                     <Nav className="ms-auto d-flex align-items-center">
-                        <CustomLink className='ms-4 h4 ' to='/'>Home</CustomLink>
-                        <CustomLink className='ms-4 h4' to='/reviews'>Reviews</CustomLink>
-                        <CustomLink className='ms-4 h4' to='/dashboard'>Dashboard</CustomLink>
-                        <CustomLink className='ms-4 h4' to='/blogs'>Blogs</CustomLink>
+                        <CustomLink className='ms-4 h5 ' to='/'>Home</CustomLink>
+                        <CustomLink className='ms-4 h5' to='/reviews'>Reviews</CustomLink>
+                        <CustomLink className='ms-4 h5' to='/dashboard'>Dashboard</CustomLink>
+                        <CustomLink className='ms-4 h5' to='/blogs'>Blogs</CustomLink>
                     </Nav>
                 </Container>
             </Navbar>

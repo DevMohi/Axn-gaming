@@ -9,8 +9,8 @@ const Dashboard = () => {
     return (
         <div className="container dashboard-container py-5">
 
-            <div>
-                <h1 className="text-center" style={{ color: '4a5043' }}>Investment vs Revenue</h1>
+            <div className="chart1 text-center">
+                <h3 className="" style={{ color: '4a5043' }}>Investment vs Revenue</h3>
 
                 <BarChart width={600} height={400} data={data}>
                     <XAxis dataKey="month" />
@@ -22,8 +22,8 @@ const Dashboard = () => {
                 </BarChart>
             </div>
 
-            <div className="text-center">
-                <h1 className="text-center">Month Wise Sell</h1>
+            <div className="text-center chart2">
+                <h3 className="text-center">Month Wise Sell</h3>
                 <LineChart width={600} height={400} data={data}
                     margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
                     <XAxis dataKey="month" />
