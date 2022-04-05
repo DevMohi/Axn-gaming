@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from 'react';
+
 import { Link } from 'react-router-dom';
 import useReviews from '../../hooks/useReviews';
 import axn from '../images/axn.png'
+import Review from '../Review/Review';
 import './Home.css'
 
 const Home = () => {
-    const [reviews, setReviews] = useReviews()
+    const [reviews] = useReviews()
 
 
     return (
@@ -25,19 +26,7 @@ const Home = () => {
             <div className='container main-container'>
 
                 {
-                    reviews.slice(0, 3).map(review => <div className='border rounded shadow-sm p-3 mb-5 bg-white rounded'>
-
-
-                        <div className='d-flex align-items-center justify-content-center rounded review-img'>
-                            <img src={review.img} alt="" />
-                        </div>
-                        <div className='px-2 text-center py-2'>
-                            <h3 className='pt-3'>Name : {review.name}</h3>
-                            <p className='h6 '>Review : {review.review}</p>
-                            <small className='fw-bold'> Rating : {review.rating}</small>
-                        </div>
-
-                    </div>)
+                    reviews.slice(0, 3).map(review => <Review key={review.id} review={review}></Review>)
                 }
             </div>
             <div className='mb-4 d-flex justify-content-center'>

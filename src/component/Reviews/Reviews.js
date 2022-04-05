@@ -1,9 +1,10 @@
 import React from 'react';
 import useReviews from '../../hooks/useReviews';
+import Review from '../Review/Review';
 import './Reviews.css'
 
 const Reviews = () => {
-    const [reviews, setReviews] = useReviews()
+    const [reviews] = useReviews()
     return (
         <div className='container  py-2'>
 
@@ -12,19 +13,7 @@ const Reviews = () => {
             <div className=' py-5 mains-container'>
 
                 {
-                    reviews.map(review => <div className='border rounded shadow-sm p-3 mb-5 bg-white rounded border-3'>
-                         
-                        <div className='d-flex align-items-center justify-content-center rounded review-img'>
-                            <img src={review.img} alt="" />
-                        </div>
-
-                        <div className='px-2 text-center'>
-                            <h3 className='pt-3'>Name : {review.name}</h3>
-                            <p className='h6 '>Review : {review.review}</p>
-                            <small className='fw-bold'> Rating : {review.rating}</small>
-                        </div>
-
-                    </div>)
+                    reviews.map(review => <Review key={review.id} review={review}></Review>)
                 }
             </div>
         </div>
