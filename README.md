@@ -6,7 +6,7 @@ Axn Gaming
 
 Open [https://axngaming.netlify.app/](https://axngaming.netlify.app/) to view the live site in your browser.
 
-* Note this is only responsive for dekstops
+* Note this is only responsive for dekstop
 
 <!-- * Item 1
 * Item 2
